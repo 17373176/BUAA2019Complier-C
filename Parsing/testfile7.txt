@@ -1,0 +1,39 @@
+int func() {
+	return (1);
+}
+char f() {
+	int a,b;
+	if(a < b);
+	if(a <= b);
+	if(a > b);
+	if(a >= b);
+	if(a != b);
+	if(a == b);
+	return ('7');
+}
+void main(){
+	const char s = 's';
+	int a,b,c;
+	int d[10];
+	char e[10];
+	char s1,s2,s3;
+	s1 = '+';
+	s1 = '-';
+	s2 = '*';
+	s3 = '/';
+	s1 = s;
+	a = -a;
+	a = +a-a;
+	a = +a+a;
+	a = a*a;
+	a = a/a;
+	a = d[1];
+	a = (0);
+	a = -1;
+	a = +1;
+	a = ++1;
+	a = +-1;
+	a = 123056;
+	a = 0;
+	a = func();
+}

@@ -1,0 +1,13 @@
+const int a=1;
+void aa(){
+ int a;
+ a = 2;
+ printf(a);
+
+}
+void main(){
+    int a;
+    a = 2;
+   aa();
+    printf(a);
+}

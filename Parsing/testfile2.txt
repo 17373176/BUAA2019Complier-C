@@ -1,0 +1,44 @@
+const int const1 = 1,   const2 = -100;
+const int conint = +10;
+const char const3 = '_',   charcon = '+';
+const char const4 = 'a';
+
+int intarrONE[1];
+int change1, var2, intarr[3];
+int var3;
+char chararrONE[1];
+char change3, ch4, str[4];
+char ch4;
+
+int fun1() {
+   const int fun1con1 = +1, fun1con2 = -2;
+    const int fun1con3 = 0;
+    const char fun1con4 = 'x', fun1con5 = '0';
+   int fun1var1, var2;
+   char fun1var3, var4[3];
+   return (0);
+}
+
+void fun2(int var2) {
+   const int fun2con1 = +1, fun2con2 = -2;
+    const int fun2con3 = 0;
+    const char fun2con4 = 'x', fun2con5 = '0';
+   int fun2var1, var2;
+   char fun2var3, var4[3];
+	;
+}
+
+void fun2(){
+  return;
+}
+
+int gets1(int var1,int var2){
+    change1 = var1 + var2;
+    return (change1);
+}
+
+
+void main(){
+    printf("Hello World");
+    printf(gets1(10, 20));
+}

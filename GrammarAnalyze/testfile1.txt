@@ -1,0 +1,86 @@
+const int a = 0;
+const int consta = 10,const1 = -101;
+const int constInt0 = +100,INT_CONST1 = -100009871;
+
+const char ch = 'c';
+const char const_ch = 'a',const_ch2 = 'b';
+const char const_9_Char = '+',CHAR_CONST_3 = '-';
+
+
+int var_int1, var_int2;
+int var_INT, VAR_INT2, var_3_INT;
+int var_int_arr[10], INT_VAR_ARR2[2019];
+
+char var_char1, var_char2;
+char var_CHAR, VAR_CHAR2, var_3_CHAR;
+char var_char_arr[20], CHAR_VAR_ARR3[2019];
+
+
+void printGlobalConst() {
+	printf("The values of the program global consts:");
+	printf("consta+const1= %d", consta+ const1);
+	printf("constInt0:", constInt0);
+	printf("INT_CONST1:", INT_CONST1);
+	printf("*******************");
+	printf("const_ch:", const_ch);
+	printf("const_ch2:", const_ch2);
+	printf("const_9_Char:", const_9_Char);
+	printf("CHAR_CONST_3:", CHAR_CONST_3);
+}
+
+void printGlobalVar() {
+	printf("The values of the program global variables:");
+	printf("var_int1:", consta);
+	printf("VAR_INT2:", const1);
+	printf("*******************");
+	printf("var_char2:", constInt0);
+	printf("var_INT:", INT_CONST1);
+}
+
+void printGlobalArr(int arrLength) {
+	int index;
+	printf("The values of the program global arrays:");
+	printf("var_int_arr[10]:");
+	for (index = 0; index < 10; index = index + 1) {
+		printf(var_int_arr[index]);
+	}
+	printf("INT_VAR_ARR2:");
+	index = 0;
+	while (index < arrLength) {
+		printf(INT_VAR_ARR2[index]);
+		index = index + 1;
+	}
+	printf("CHAR_VAR_ARR3:");
+	index = 0;
+	do {
+		printf(CHAR_VAR_ARR3[index]);
+		index = index + 1;
+	} while (index < arrLength);
+}
+
+int input_local_var() {
+	int a, b;
+	scanf(a, b);
+	return (1);
+}
+
+void printAdd(int a, int b) {
+	printf(a + b);
+	printf(input_local_var());
+	return;
+}
+
+void main() {
+	const int arrLen = 10;
+	int local_int;
+	char local_char;
+	scanf(local_int);
+	scanf(local_char);
+	printf("The values of the local variables:");
+	printf(local_int);
+	printf(local_char);
+	printGlobalConst();
+	printGlobalVar();
+	printGlobalArr(arrLen);
+	printAdd(-local_int, 1);
+}

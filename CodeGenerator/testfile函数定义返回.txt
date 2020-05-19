@@ -1,0 +1,22 @@
+const int MAX_NUM = 128 ;
+
+int isIf(int i) {
+   if (i == 0) return (0);
+   return (1);
+}
+
+char funch(char a){
+     if (a >= '0' && a <= '9') {
+       return (a-'0');
+      } else {
+         return (a);
+      }
+}
+
+void main()
+{
+   int n ;
+   scanf(n);
+   printf(isIf(n));
+    printf(funch('n'));
+}

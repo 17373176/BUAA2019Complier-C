@@ -1,0 +1,32 @@
+INTTK int
+IDENFR func
+<声明头部>
+LPARENT (
+<参数表>
+RPARENT )
+LBRACE {
+IFTK if
+LPARENT (
+LPARENT (
+IDENFR a
+<因子>
+<项>
+<表达式>
+RPARENT )
+<因子>
+<项>
+<表达式>
+GRE >
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+<条件>
+RPARENT )
+<条件语句>
+<语句>
+<语句列>
+<复合语句>
+第 649 行 ( 单词语法分析出错:非法有返回值函数定义

@@ -1,0 +1,26 @@
+int a[6];
+
+void pailie(int n,int q){
+    int i,k,j;
+    if(q==n){
+        for(i=0;i<n;i=i+1)printf("%d ",a[i]);
+        printf("\n");
+    }else {
+        for(i=1;i<=n;i=i+1){
+            k=1;
+            for(j=0;j<q;j=j+1)
+                if(a[j]==i)k=0;
+            if(k!=0){
+                a[q]=i;
+                pailie(n,q+1);
+            }
+        }
+    }
+}
+
+void main()
+{
+   int n;
+    scanf(n);
+    pailie(n,0);
+}

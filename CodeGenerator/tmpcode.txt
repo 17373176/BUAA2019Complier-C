@@ -1,0 +1,139 @@
+void complete_num()
+G4j = 2 + 0
+Label1:
+T1 = 1024 + 0
+T2 = G4j - T1
+BGEZ T2 Label2
+G5n = -1 + 0
+G6s = G4j + 0
+G3i = 1 + 0
+Label3:
+T1 = G3i - G4j
+BGEZ T1 Label4
+T1 = G4j / G3i
+T2 = T1 + 0
+T3 = T2 * G3i
+T4 = T3 + 0
+G7x1 = T4 + 0
+T5 = G7x1 - G4j
+BNZ T5 Label5
+T1 = G5n + 1
+T2 = T1 + 0
+G5n = T2 + 0
+T3 = G6s - G3i
+T4 = T3 + 0
+G6s = T4 + 0
+T5 = 1024 + 0
+T6 = G5n - T5
+BLZ T6 Label7
+Print string "OVERFLOW! "
+New Line.
+Jump Label8
+Label7:
+G2k[G5n] = G3i + 0
+Label8:
+Jump Label6
+Label5:
+Label6:
+T1 = G3i + 1
+T2 = T1 + 0
+G3i = T2 + 0
+Jump Label3
+Label4:
+T3 = 0 + 0
+T4 = G6s - T3
+BNZ T4 Label9
+Print string "complete number: "
+Print id G4j
+New Line.
+G3i = 0 + 0
+Label11:
+T1 = G3i - G5n
+BGZ T1 Label12
+Print string "  "
+T1 = G2k[G3i]
+Print id T1
+New Line.
+T1 = G3i + 1
+T2 = T1 + 0
+G3i = T2 + 0
+Jump Label11
+Label12:
+Print string "  "
+New Line.
+Jump Label10
+Label9:
+Label10:
+T1 = G4j + 1
+T2 = T1 + 0
+G4j = T2 + 0
+Jump Label1
+Label2:
+Print string "---------------------------------------------------------------"
+New Line.
+G10h = 0 + 0
+G11leap = 1 + 0
+G8m = 2 + 0
+Label13:
+T3 = 1024 + 0
+T4 = G8m - T3
+BGZ T4 Label14
+T1 = G8m - 1
+T2 = T1 + 0
+G9k2 = T2 + 0
+G3i = 2 + 0
+Label15:
+T3 = G3i - G9k2
+BGZ T3 Label16
+T1 = G8m / G3i
+T2 = T1 + 0
+T3 = T2 * G3i
+T4 = T3 + 0
+G12x2 = T4 + 0
+T5 = G12x2 - G8m
+BNZ T5 Label17
+G11leap = 0 + 0
+Jump Label18
+Label17:
+Label18:
+T1 = G3i + 1
+T2 = T1 + 0
+G3i = T2 + 0
+Jump Label15
+Label16:
+T3 = 1 + 0
+T4 = G11leap - T3
+BNZ T4 Label19
+Print string " "
+Print id G8m
+New Line.
+T1 = G10h + 1
+T2 = T1 + 0
+G10h = T2 + 0
+T3 = G10h / 10
+T4 = T3 + 0
+T5 = T4 * 10
+T6 = T5 + 0
+G12x2 = T6 + 0
+T7 = G12x2 - G10h
+BNZ T7 Label21
+Print string "  "
+New Line.
+Jump Label22
+Label21:
+Label22:
+Jump Label20
+Label19:
+Label20:
+G11leap = 1 + 0
+T1 = G8m + 1
+T2 = T1 + 0
+G8m = T2 + 0
+Jump Label13
+Label14:
+Print string "The total is "
+Print id G10h
+New Line.
+Ret
+void main()
+Call complete_num

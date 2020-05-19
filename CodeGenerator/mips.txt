@@ -1,0 +1,55 @@
+.data # generate data segment
+	String5:.asciiz "testnum[2] = "
+	String6:.asciiz "testnum[1] = "
+	String7:.asciiz "testnum[3] = "
+	String8:.asciiz "testnum[0] = "
+.text # generate text segment
+j main
+abs:
+sw $k0 0($sp)
+sw $k1 4($sp)
+sw $t4 8($sp)
+sw $t5 12($sp)
+sw $t6 16($sp)
+sw $t7 20($sp)
+sw $t8 24($sp)
+sw $t9 28($sp)
+addiu $sp $sp 32
+sw $fp 4($sp)
+move $fp $sp
+sw $ra 0($fp)
+addiu $sp $fp 8
+lw $v1 268501056($0)
+sw $v1 0($sp)
+addiu $sp $sp 4
+addiu $sp $sp 0
+move $k0 $sp
+move $k1 $0 
+addiu $k1 $0 6
+li $t1 0
+move $t4 $t1
+li $t1 268501156
+move $t2 $t4
+li $t3 4
+mult $t2 $t3
+mflo $t2
+addu $t1 $t1 $t2
+lw $t1 0($t1)
+move $t5 $t1
+move $t1 $t5
+li $t2 1
+addu $t1 $t1 $t2
+move $t6 $t1
+li $t0 268501156
+li $t1 0
+li $t2 4
+mult $t1 $t2
+mflo $t1
+addu $t0 $t0 $t1
+move $t1 $t6
+sw $t1 0($t0)
+addiu $t1 $fp 8
+lw $t1 0($t1)
+move $t9 $t1
+move $a1 $t9
+bgez $a1 Label2

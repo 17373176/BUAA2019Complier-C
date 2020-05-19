@@ -1,0 +1,8 @@
+int var_i; char var_ch;
+
+void main() {
+	const int Len = 10; const char OP = 'A';
+	for (var_i = Len; var_i >= 0; var_i = var_i - 1) {
+		printf(var_i);
+	}
+}

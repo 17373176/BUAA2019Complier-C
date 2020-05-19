@@ -1,0 +1,38 @@
+const int A = 1;
+const char B = '_';	
+int a;			
+void func2() {
+	int i;	;
+	return;
+}			
+int func1(int var1, char var2) {
+	const int C = 2,E = 3;
+	const char D = '1',F = '2';
+	int numList[2], num1;
+	for (num1 = 0; num1 <= 1; num1 = num1 + 1) numList[num1] = 0;
+	if (C >= 1) {
+		num1 = 0;
+	}
+	func2();
+	printf(C);
+	return (var1);
+}
+int func3(int var1) {
+	int numList[1];
+	return (var1);
+}
+int func4(char var1) {
+	char c;
+	int var;
+	return (var);
+}
+void main() {
+	int var1;
+	char var2;
+	scanf(var1, var2);
+	func3(var1);
+	func1(var1, var2);
+	{
+		var1 = 1; 
+	}
+}

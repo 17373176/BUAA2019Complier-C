@@ -1,0 +1,51 @@
+const int const1 = +1, const2 = -100;
+const char const3 = '_';
+int change1, _int0, int1_, int2;
+char change3, _char0, ch_1;
+change1 = +0;
+_int0 = change1 + const2;
+int1_ = _int0 *int2;
+int2 = 1029348;
+change3 = '+';
+_char0 = '0';
+ch_1 = change3 + _char0;
+
+int gets1(int var1,int var2){
+    change1 = var1 + var2;
+    return (change1);
+}
+
+void func1(){
+     int i, j;
+     i = 0;
+     j = 1;
+     if (i < j) return;
+     i = 0;
+     j = j - 1;
+}
+
+char func2(char ch, int a){
+
+  return (ch + a); 
+}
+
+void main(){
+    char ch = '+';
+int cnt;
+scanf("%d\n", cnt);
+cnt = cnt /ch;
+    if (ch == '-') {
+    	printf("-");
+    }
+    else 
+	printf('+');
+do{
+ i = i + 10;
+} while(i != 10);
+for (int i = 0; i < 10; i++){
+    printf("Hello World");
+}
+    printf(gets1(10, 20));
+printf("%s", char_str);
+return;
+}

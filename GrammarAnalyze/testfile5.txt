@@ -1,0 +1,5 @@
+const int consta = 10, const1 = -101; const int constInt0 = +100, INT_CONST1 = -100009871;
+
+void main() {
+	const int a = 1; const char b = 'a';
+}

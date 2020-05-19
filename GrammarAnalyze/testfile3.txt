@@ -1,0 +1,65 @@
+const int a = 1234, b = 9876;
+const char ADD = '+', SUB = '-', MUL = '*', DIV = '/';
+
+int var_int, var_int2;
+char var_char, var_char2;
+
+int operation(char op) {
+	if (op == ADD) {
+		printf(-a + b);
+	}
+	else if (op == SUB) {
+		printf(+a - b);
+	}
+	else if (op == MUL) {
+		printf(+a * b);
+	}
+	else if (op == '/') {
+		if (b != 0) printf(-a / b);
+		else printf("error, b = 0");
+		return (-1);
+	}
+	else return (0);
+	return (1);
+}
+
+int max_int(int a, int b) {
+	if (a > b)
+		return (a);
+	else return (b);
+}
+
+char max_char(char a, char b) {
+	if ((a) > (b))
+		return (a);
+	else return (b);
+}
+
+int no_greater_than(int a, int b) {
+	if (a <= b)
+		return (1);
+	else return (0);
+}
+
+void input(int var_int, char var_char) {
+	scanf(var_int, var_char);
+}
+
+void main() {
+	char op;
+	input(var_int, var_char);
+	var_int = var_int2 * 2;
+	if ((var_char)*1 >= 35) {
+		if ((var_char)*1 <= 125)
+			var_char2 = +var_char;
+	}
+	else {
+		var_char2 = 'z';
+	}
+	printf("max integer:", max_int(var_int, var_int2));
+	printf("max character:%c", max_char(var_char, var_char2));
+	no_greater_than(var_int, var_int2);
+
+	if (operation(op)) printf("succeed!");
+	else printf("no corresponding operation.");
+}

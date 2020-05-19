@@ -1,0 +1,22 @@
+const int const1 = 1, const2 = -100;
+const char const3 = 'a';
+int change1;
+char change2;
+int arr[3];
+char charr[2];
+void main(){
+   scanf(change1);
+scanf(change2);
+   printf("Hello World");
+ change1 = change1 + const1 - const2-2;
+arr[0] = -1;
+arr[1] = change1;
+ arr[2] = -arr[1] + const1 * const2;
+charr[0] = change2;
+printf(arr[0]);
+printf(arr[1]);
+printf(arr[2]);
+printf(charr[0]);
+   printf(change1);
+
+}

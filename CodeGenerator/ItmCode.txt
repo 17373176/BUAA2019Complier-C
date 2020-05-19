@@ -1,0 +1,230 @@
+Int abs()
+Para int a
+T1 = 0 + 0
+T2 = G0g_list[T1]
+T3 = T2 + 1
+T4 = T3 + 0
+G0g_list[0] = T4 + 0
+T5 = 0 + 0
+T6 = G3a - T5
+BGEZ T6 Label2
+T1 = 0 - G3a
+T2 = T1 + 0
+Ret id T2
+Jump Label1
+Label2:
+Label1:
+T1 = G3a + 0
+Ret id T1
+Void init()
+G5i = 0 + 0
+Label3:
+T1 = 10 + 0
+T2 = G5i - T1
+BGEZ T2 Label4
+G0g_list[G5i] = 0 + 0
+T1 = G5i + 1
+T2 = T1 + 0
+G5i = T2 + 0
+Jump Label3
+Label4:
+T3 = 1 + 0
+T4 = G0g_list[T3]
+T5 = T4 + 1
+T6 = T5 + 0
+G0g_list[1] = T6 + 0
+Ret
+Void show()
+G0g_list[3] = 1 + 0
+G7i = 0 + 0
+Label7:
+T7 = 4 + 0
+T8 = G7i - T7
+BGEZ T8 Label8
+T1 = G0g_list[G7i]
+Print id T1
+New Line.
+T1 = G7i + 1
+T2 = T1 + 0
+G7i = T2 + 0
+Jump Label7
+Label8:
+Ret
+Int times()
+Para int a
+Para int b
+G0g_list[2] = 1 + 0
+T3 = G9a * G10b
+Ret id T3
+Int sum4()
+Para int a
+Para int b
+Para int c
+Para int d
+T3 = 3 + 0
+T4 = G0g_list[T3]
+T5 = 1 + T4
+T6 = T5 + 0
+G0g_list[3] = T6 + 0
+T7 = G12a + G13b
+T8 = T7 + G14c
+T9 = T8 + G15d
+Ret id T9
+Void fi()
+Para int i
+BEZ G17i Label12
+T1 = G17i + 1
+T2 = T1 + 0
+T3 = G1testnum[T2]
+T4 = G17i - -2
+T5 = T4 + 0
+T6 = G1testnum[T5]
+T7 = T3 + T6
+T8 = T7 + 0
+G1testnum[G17i] = T8 + 0
+T9 = G17i - 1
+T10 = T9 + 0
+Push T10
+Call fi
+Jump Label11
+Label12:
+T11 = G17i + 1
+T12 = T11 + 0
+T13 = G1testnum[T12]
+T14 = G17i - -2
+T15 = T14 + 0
+T16 = G1testnum[T15]
+T17 = T13 + T16
+T18 = T17 + 0
+G1testnum[G17i] = T18 + 0
+Ret
+Label11:
+Ret
+Void main()
+Read Char G22f
+Read Int G19a
+Call init
+T1 = 2 + 0
+T2 = -2 + 0
+Push T1
+Push T2
+Call times
+T3 = Ret + 0
+T4 = T3 + 0
+Push T4
+Call abs
+T5 = Ret + 0
+T6 = T5 + 0
+T7 = -1 + 0
+Push T7
+Call abs
+T8 = Ret + 0
+T9 = T8 + 0
+T10 = -3 + 0
+Push T10
+Call abs
+T11 = Ret + 0
+T12 = T11 + 0
+T13 = 22 + 0
+Push T13
+Call abs
+T14 = Ret + 0
+T15 = T14 + 0
+Push T6
+Push T9
+Push T12
+Push T15
+Call sum4
+T16 = Ret + 0
+Print id T16
+New Line.
+G1testnum[9] = 1 + 0
+G1testnum[8] = 2 + 0
+T1 = 7 + 0
+Push T1
+Call fi
+Print string "testnum[2] = "
+T2 = 8 + 0
+T3 = G1testnum[T2]
+T4 = T3 + 0
+T5 = G1testnum[T4]
+Print id T5
+New Line.
+Print string "testnum[1] = "
+T2 = 1 + 0
+T3 = G1testnum[T2]
+Print id T3
+New Line.
+Print string "testnum[3] = "
+T2 = 5 + 0
+T3 = G1testnum[T2]
+T4 = T3 + 0
+T5 = G1testnum[T4]
+T6 = 9 + 0
+T7 = G1testnum[T6]
+T8 = T5 + T7
+T9 = T8 + 0
+T10 = G1testnum[T9]
+Print id T10
+New Line.
+Print string "testnum[0] = "
+T2 = 0 + 0
+T3 = G1testnum[T2]
+Print id T3
+New Line.
+G20theSum = 0 + 0
+T2 = 10 + 0
+T3 = G19a - T2
+BLEZ T3 Label14
+G21i = 0 + 0
+Label15:
+T1 = G20theSum + G21i
+T2 = T1 + 0
+G20theSum = T2 + 0
+T3 = G21i + 1
+T4 = T3 + 0
+G21i = T4 + 0
+T5 = G21i - G19a
+BLZ T5 Label15
+Jump Label13
+Label14:
+T1 = G22f + 0
+T2 = T1 + 0
+T3 = 43 + 0
+T4 = T2 - T3
+BNZ T4 Label20
+G21i = 0 + 0
+Label21:
+T1 = G19a + 3
+T2 = T1 + 0
+T3 = G21i - T2
+BGEZ T3 Label22
+T1 = G20theSum + G21i
+T2 = T1 + 0
+G20theSum = T2 + 0
+T3 = G21i + 3
+T4 = T3 + 0
+G21i = T4 + 0
+Jump Label21
+Label22:
+Jump Label19
+Label20:
+G21i = 0 + 0
+Label25:
+T5 = G19a + 3
+T6 = T5 + 0
+T7 = G21i - T6
+BGEZ T7 Label26
+T1 = G20theSum - G21i
+T2 = T1 + 0
+G20theSum = T2 + 0
+T3 = G21i + 3
+T4 = T3 + 0
+G21i = T4 + 0
+Jump Label25
+Label26:
+Label19:
+Label13:
+Call show
+Print id G20theSum
+New Line.

@@ -1,0 +1,85 @@
+const int a = 0;
+const int consta = 10,const1 = -101;
+const int constInt0 = +100,INT_CONST1 = -100009871;
+
+const char ch = 'c';
+const char const_ch = 'a',const_ch2 = 'b';
+const char const_9_Char = '+',CHAR_CONST_3 = '-';
+
+int var_int1, var_int2;
+int var_INT, VAR_INT2, var_3_INT;
+int var_int_arr[10], INT_VAR_ARR2[2019];
+
+char var_char1, var_char2;
+char var_CHAR, VAR_CHAR2, var_3_CHAR;
+char var_char_arr[20], CHAR_VAR_ARR3[2019];
+
+void printConst() {
+	printf("constInt0:", constInt0);
+	printf("INT_CONST1:", INT_CONST1);
+	printf("*******************");
+}
+
+void printVar() {
+	int i;
+	printf("var_int2:", var_int2);
+	printf("VAR_CHAR:", var_CHAR);
+	printf("var_int_arr[10]");
+	
+	for (i = 0; i < 10; i = i + 1) {
+		printf(var_int_arr[i]);
+	}
+	printf("var_charArr[26]");
+	for (i = 0; i < 26; i = i + 1) {
+		printf(var_charArr[i]);
+	}
+}
+
+int gets1(int var1,int var2){
+    change1 = var1 + var2;
+    return (change1);
+}
+
+
+
+void main(){
+
+                const int Len = 2019;
+	int i;
+char op;
+	i= 2;
+	printConst();
+
+	var_int_arr[0] = 1;
+	var_int_arr[1] = 1;
+	while (i < 10) {
+		var_int_arr[i] = var_int_arr[i - 1] + var_int_arr[i - 2];
+		i = i + 1;
+	}
+
+	for (i = 0; i < 26; i = i + 1) {
+		var_charArr[i] = 'a';
+	}
+	printVar();
+
+	for (i = 0; i < 2019; i = i + 1) {
+		INT_VAR_ARR2[i] = i;
+	}
+
+    printf("Hello World");
+    printf(gets1(10, 20));
+
+               
+	input(var_int, var_char);
+	var_int = var_int2 * 2;
+	if ((var_char)*1 >= 35) {
+		if ((var_char)*1 <= 125)
+			var_char2 = +var_char;
+	}
+	else {
+		var_char2 = 'z';
+	}
+
+
+
+}

@@ -1,0 +1,37 @@
+const int MAX_NUM = 128 ;
+
+int mod(int x, int y){
+   x=x-x/y*y;
+   return (x) ;
+}
+
+void swap(int x, int y){
+    int temp;
+    printf("x = ", x) ;
+    printf("y = ", y) ;
+    temp = x;
+    x=y;
+    y=temp;
+    printf("SWAP x = ", x) ;
+    printf("SWAP y = ", y) ;
+    printf(mod(x, full_num(y, 1, 1)));
+}
+
+int full_num(int n, int j, int a){
+
+for (j = 0; j <= 10; j=j+1){
+  printf("for", j);
+} 
+  return (n*100+j*10+a) ;
+}
+
+void main()
+{
+   int n ;
+  scanf(n);
+  printf("5mod2=", mod(5, 2));
+  printf("13mod3", mod(13, 3));
+   swap(5, 10 ) ;
+   printf("full", full_num(n, 2, MAX_NUM)) ;
+  
+}

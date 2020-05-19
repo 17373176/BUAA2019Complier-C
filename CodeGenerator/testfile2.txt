@@ -1,0 +1,12 @@
+const int const1 = 1, const2 = -100;
+const char const3 = 'a';
+int change1;
+char change2;
+void main(){
+   change2 = 10 + const2;
+   scanf(change1);
+   printf("Hello World");
+   printf(change2);
+    printf(change1);
+scanf(change1);
+}
